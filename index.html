@@ -9,7 +9,6 @@
 
     <link href='https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,400italic,500,100italic,700' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/css?family=Dosis|Open+Sans" rel="stylesheet">
-    <!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href='main.css' rel='stylesheet' type='text/css'>
     <link rel="icon" href="lib/favicon.png" sizes="26x26" type="image/png">
@@ -19,13 +18,7 @@
 
 <body onload="myFunction()">
 
-<!---  MUSIC  --->
-
-<audio autoplay loop hide>
-    <source src="music.mp3">
-</audio>
-
-<!---  LOADER   --->
+    <!---  LOADER   --->
 
 <div class="load" id="load">
     <center>
@@ -44,506 +37,562 @@
 
     <!---  NAVBAR   --->
 
-    <div class="navbar disappear">
-        <div class="nav-big">
-            <a href="#home" class="nav-img"><img src="lib/logo.png"></a>
-            <a href="#">Register</a>
-            <a href="#people">Team</a>
-            <a href="#about">About</a>
-            <a href="#home">Home</a>
-        </div>
-        <div class="nav-small">
-            <span onclick="openNav()" class="bruh">
-                <i class="fas fa-bars"></i>
-            </span>
-        </div>
+<div class="navbar disappear">
+    <div class="nav-big">
+        <a href="#home" class="nav-img"><img src="lib/logo.png"></a>
+        <a href="#">Register</a>
+        <a href="#people">Team</a>
+        <a href="#about">About</a>
+        <a href="#home">Home</a>
     </div>
-
-    <div id="sidenav" class="sidenav">
-        <center>
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="#home"><i class="fas fa-home"></i></a>
-            <a href="#about">About</a>
-            <a href="#people">Team</a>
-        </center>
+    <div class="nav-small">
+        <span onclick="openNav()" class="bruh">
+            <i class="fas fa-bars"></i>
+        </span>
     </div>
+</div>
 
-    <a class="sr-only sr-only-focusable" href="#sidenav">Skip to navigation bar</a>
-    <a class="sr-only sr-only-focusable" href="#home">Skip to main content</a>
-    <a class="sr-only sr-only-focusable" href="#end">Skip to footer</a>
+<div id="sidenav" class="sidenav">
+    <center>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#home"><i class="fas fa-home"></i></a>
+        <a href="#about">About</a>
+        <a href="#people">Team</a>
+    </center>
+</div>
+
+<a class="sr-only sr-only-focusable" href="#sidenav">Skip to navigation bar</a>
+<a class="sr-only sr-only-focusable" href="#home">Skip to main content</a>
+<a class="sr-only sr-only-focusable" href="#end">Skip to footer</a>
 
     <!--- DARK MODE SWITCH --->
 
-    <div class="theme-switch-wrapper">
-        <label class="theme-switch" for="checkbox">
-            <input type="checkbox" id="checkbox" />
-            <div class="slider round">
-                <center>
-                    <img src="lib/sun.png" class="sun">
-                    <img src="lib/moon.png" class="moon">
-                </center>
-            </div>
-        </label>
-    </div>
+<div class="theme-switch-wrapper">
+    <label class="theme-switch" for="checkbox">
+        <input type="checkbox" id="checkbox" />
+        <div class="slider round">
+            <center>
+                <img src="lib/sun.png" class="sun">
+                <img src="lib/moon.png" class="moon">
+            </center>
+        </div>
+    </label>
+</div>
 
     <!--- HOME --->
 
-    <div id="home">
-    </div>
+<div id="home">
+</div>
 
     <!--- ABOUT --->
 
-    <div id="about" class="section">
-        <div class="row">
-            <div class="col-md-2"></div>
-            <div class="col-md-8">
-                <center>
-                    <h1>Coming Soon</h1>
-                    <hr class="section-hr">
-                    <div class="cntdwn">
-                        <div id="demo">
-                            <div class="row">
-                                <div class="col-md-2"></div>
-                                <div class="col-md-2 time-left">
-                                    <center>
-                                        <span id="days"></span><br>
-                                        <span>DAYS</span>
-                                    </center>
-                                </div>
-                                <div class="col-md-2 time-left">
-                                    <center>
-                                        <span id="hours"></span><br>
-                                        <span>HOURS</span>
-                                    </center>
-                                </div>
-                                <div class="col-md-2 time-left">
-                                    <center>
-                                        <span id="mins"></span><br>
-                                        <span>MINUTES</span>
-                                    </center>
-                                </div>
-                                <div class="col-md-2 time-left">
-                                    <center>
-                                        <span id="secs"></span><br>
-                                        <span>SECONDS</span>
-                                    </center>
-                                </div>
-                                <div class="col-md-2"></div>
+<div id="about" class="section">
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <center>
+                <h1>Coming Soon</h1>
+                <hr class="section-hr">
+                <div class="cntdwn">
+                    <div id="demo">
+                        <div class="row">
+                            <div class="col-md-2"></div>
+                            <div class="col-md-2 time-left">
+                                <center>
+                                    <span id="days"></span><br>
+                                    <span>DAYS</span>
+                                </center>
                             </div>
-                            <h2 id="end"></h2>
+                            <div class="col-md-2 time-left">
+                                <center>
+                                    <span id="hours"></span><br>
+                                    <span>HOURS</span>
+                                </center>
+                            </div>
+                            <div class="col-md-2 time-left">
+                                <center>
+                                    <span id="mins"></span><br>
+                                    <span>MINUTES</span>
+                                </center>
+                            </div>
+                            <div class="col-md-2 time-left">
+                                <center>
+                                    <span id="secs"></span><br>
+                                    <span>SECONDS</span>
+                                </center>
+                            </div>
+                            <div class="col-md-2"></div>
                         </div>
+                        <h2 id="end"></h2>
                     </div>
+                </div>
+            </center>
+            <div class="aboutImg">
+                <center>
+                    <a id="ordinImage" onclick="aboutp()" data-toggle="collapse" href="#ordinText" role="button" aria-expanded="false" aria-controls="ordinText" type="button" disabled><img src="lib/ordin2.png" class="imglink" alt="ordinText"></a>
+                    <a id="pyroImage" onclick="abouto()" data-toggle="collapse" href="#pyroText" role="button" aria-expanded="false" aria-controls="pyroText" type="button" disabled><img src="lib/pyro-logo.png" class="imglink" alt="pyroText"></a>
                 </center>
-                <div class="aboutImg">
-                    <center>
-                        <a id="ordinImage" onclick="aboutp()" data-toggle="collapse" href="#ordinText" role="button" aria-expanded="false" aria-controls="ordinText"><img src="lib/ordin2.png" class="imglink" alt="ordinText"></a>
-                        <a id="pyroImage" onclick="abouto()" data-toggle="collapse" href="#pyroText" role="button" aria-expanded="false" aria-controls="pyroText"><img src="lib/pyro-logo.png" class="imglink" alt="pyroText"></a>
-                    </center>
-                </div>
-                <div class="aboutTextCont">
-                    <div class="writen aboutText collapse active" id="ordinText">
-                        <span class="description">
-                            <p><span>I</span>t all started 16 years ago. A fusion of creativity, talent and skill is what Ordin@trix is all about. Ordin@trix has evolved through the years moving from an interschool festival at the state level to an international event. Over the years we have had students from China, Muscat, Japan and other countries as regular participants.</p>
-                            <p><span>T</span>he event has witnessed gracious presence of celebrities like Mr. Amol Gupte and Miss Manju Singh apart from experts from various technical fields. The movies showcased here have been screened at the movie festivals by PVR Cinemas and CHINH India Festival.</p>
-                        </span>
-                    </div>
-                    <div class="writen  collapse aboutText" id="pyroText">
-                        <span class="description">
-                            <p><span>S</span>ince it's conception, Ordin@trix has come a long way and so have the PYROTECHS. They are the very nuclei of Ordin@trix, who create fireworks in the field of technology. They breathe life into Ordin@trix.</p>
-                            <p><span>PYROTECH</span>members are an elite team of student computer enthusiasts. They have represented the school in various competitions and won laurels in events such as web designing, software development, image editing, movie making, 3-D modelling, Robotics, photography and others.</p>
-                        </span>
-                    </div>
-                </div>
-                <br>
-                <hr>
             </div>
-            <div class="col-md-2"></div>
+            <div class="aboutTextCont">
+                <div class="writen aboutText collapse active" id="ordinText">
+                    <span class="description">
+                        <p><span>I</span>t all started 16 years ago. A fusion of creativity, talent and skill is what Ordin@trix is all about. Ordin@trix has evolved through the years moving from an interschool festival at the state level to an international event. Over the years we have had students from China, Muscat, Japan and other countries as regular participants.</p>
+                        <p><span>T</span>he event has witnessed gracious presence of celebrities like Mr. Amol Gupte and Miss Manju Singh apart from experts from various technical fields. The movies showcased here have been screened at the movie festivals by PVR Cinemas and CHINH India Festival.</p>
+                    </span>
+                </div>
+                <div class="writen collapse aboutText" id="pyroText">
+                    <span class="description">
+                        <p><span>S</span>ince it's conception, Ordin@trix has come a long way and so have the PYROTECHS. They are the very nuclei of Ordin@trix, who create fireworks in the field of technology. They breathe life into Ordin@trix.</p>
+                        <p><span>PYROTECH</span>members are an elite team of student computer enthusiasts. They have represented the school in various competitions and won laurels in events such as web designing, software development, image editing, movie making, 3-D modelling, Robotics, photography and others.</p>
+                    </span>
+                </div>
+            </div>
+            <br>
+            <hr>
         </div>
+        <div class="col-md-2"></div>
     </div>
+</div>
 
     <!--- EVENTS --->
 
-    <div id="events" class="section">
-        <div class="row">
-            <div class="col-md-2"></div>
-            <div class="col-md-8">
-                <center>
-                    <h1>GUIDELINES</h1>
-                    <hr class="section-hr">
-                </center>
-                <div class="writen">
-                    <ol>
-                        <li>Only <b>ONLINE</b> registrations on a first come first served basis. </li>
-                        <li>The first <b>35 registrations</b> will be accommodated in each event. Registrations will close on <b>18 July 2020</b>. </li>
-                        <li>List of registered schools will be displayed on the event website and our social portals.</li>
-                        <li>The timings and link to attend each event will be shared soon after the last date of registration.</li>
-                        <li><b>Submissions must not:</b> violate any third party rights, including, but not limited to, copyrights, trademark rights, or rights of privacy and publicity; contain defamatory statements; include threats to any person, place, business, or group; or be obscene or indecent.</li>
-                        <li>Please refer to our school website, <a href="http://www.tagoreint.com/vv" class="event-link">www.tagoreint.com/vv</a> and/or our <a href="#" class="event-link">event website</a> for the latest updates on the events.</li>
-                        <li>Decisions of the organizers & jury members regarding any issue related to Ordin@trix’20.0 will be <b>FINAL AND BINDING</b> on all schools and participants.</li>
-                        <li>To qualify for the overall trophy, a school must take part in a minimum of <b>4 events</b>.</li>
-                    </ol>
-                </div>
-                <br><br>
-
-                <hr>
+<div id="events" class="section">
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <center>
+                <h1>GUIDELINES</h1>
+                <hr class="section-hr">
+            </center>
+            <div class="writen">
+                <ol>
+                    <li>Only <b>ONLINE</b> registrations on a first come first served basis. </li>
+                    <li>The first <b>35 registrations</b> will be accommodated in each event. Registrations will close on <b>18 July 2020</b>. </li>
+                    <li>List of registered schools will be displayed on the event website and our social portals.</li>
+                    <li>The timings and link to attend each event will be shared soon after the last date of registration.</li>
+                    <li><b>Submissions must not:</b> violate any third party rights, including, but not limited to, copyrights, trademark rights, or rights of privacy and publicity; contain defamatory statements; include threats to any person, place, business, or group; or be obscene or indecent.</li>
+                    <li>Please refer to our school website, <a href="http://www.tagoreint.com/vv" class="event-link">www.tagoreint.com/vv</a> and/or our <a href="#" class="event-link">event website</a> for the latest updates on the events.</li>
+                    <li>Decisions of the organizers & jury members regarding any issue related to Ordin@trix’20.0 will be <b>FINAL AND BINDING</b> on all schools and participants.</li>
+                    <li>To qualify for the overall trophy, a school must take part in a minimum of <b>4 events</b>.</li>
+                </ol>
             </div>
-            <div class="col-md-2"></div>
+            <br><br>
+
+            <hr>
         </div>
+        <div class="col-md-2"></div>
     </div>
+</div>
 
     <!--- TEAM --->
 
-    <div id="events-store" class="section">
-        <div class="row">
-            <div class="col-md-2"></div>
-            <div class="col-md-8">
-                <center>
-                    <h1>EVENTS IN STORE</h1>
-                    <hr class="section-hr">
-
-                    <div class="event-box">
-                        <div class="event-box-top">
-
-                            <div class="nav">
-                                <ul class="nav nav-pills" id="pills-tab" role="tablist">
-                                    <li class="nav-item">
-                                        <a class="nav-link innova" id="innovlink" data-toggle="pill" href="#innovhead" role="tab" aria-controls="#innovtab" aria-selected="true" data-menuanchor="home" style="color:white;"><i class="fal fa-user-chart"></i></a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link scripta" id="scriptlink" data-toggle="pill" href="#scripttab" role="tab" aria-controls="#scripttab" aria-selected="true" data-menuanchor="about" style="color:white;"><i class="far fa-code"></i></a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link anima" id="animlink" data-toggle="pill" href="#animtab" role="tab" aria-controls="#animtab" aria-selected="true" data-menuanchor="circulars" style="color:white;"><i class="fal fa-starship"></i></a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link quiza" id="quizlink" data-toggle="pill" href="#quiztab" role="tab" aria-controls="#quiztab" aria-selected="true" data-menuanchor="home" style="color:white;"><i class="fas fa-question"></i></a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link gamea" id="gamelink" data-toggle="pill" href="#gametab" role="tab" aria-controls="#gametab" aria-selected="true" data-menuanchor="home" style="color:white;"><i class="fal fa-alien-monster"></i></a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link snapa" id="snaplink" data-toggle="pill" href="#snaptab" role="tab" aria-controls="#snaptab" aria-selected="true" data-menuanchor="home" style="color:white;"><i class="fal fa-camera-retro"></i></a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link crypta" id="cryptlink" data-toggle="pill" href="#crypttab" role="tab" aria-controls="#crypttab" aria-selected="true" data-menuanchor="home" style="color:white;"><i class="fal fa-globe"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="event-box-body tab-content">
-
-                            <!-- INNOVATE -->
-                            <div class="tab-pane eventbod fade show active" id="innovtab" role="tabpanel" aria-labelledby="innovlink">
-                                INNOVATE
-                            </div>
-
-                            <!-- SCRIPT -->
-                            <div class="tab-pane eventbod fade" id="scripttab" role="tabpanel" aria-labelledby="scriptlink">
-                                <h1>SCRIPT@TRIX</h1>
-                                <center>
-                                    <i>Talk is cheap. Show me the code.</i>
-                                </center>
-
-                                <ol class="guidelines">
-                                    <li>The event is open for students of classes <b>VI-XII</b>.</li>
-                                    <li>Only <b>1 team</b> comprising of <b>2 students</b> can participate from each school.</li>
-                                    <li>A <b>preliminary round</b> will be conducted and max. of <b>10 teams</b> will qualify for the onsite event on the basis of coding, creativity and design.</li>
-                                    <li>Topic for the prelim will be uploaded on <b>8th July 2020</b>. Participants have to submit their prelim entries by <b>15th July 2020.</b></li>
-                                    <li>Results of the prelims will be declared by <b>20th July 2020</b>.</li>
-                                    <li>For the final round, to be held on 22nd July 2020, topic will be given <b>on the spot</b>.</li>
-                                    <li><b>2 PCs</b> will be provided per team in the final round.</li>
-                                    <li>Time provided for the onsite event : <b>3 hours</b></li>
-                                    <li>Softwares provided will be Adobe Photoshop CS3, Sublime Text, Notepad++, Mozilla Firefox and Google Chrome</li>
-                                </ol>
-                            </div>
-
-                            <!-- ANIMATE -->
-                            <div class="tab-pane eventbod fade" id="animtab" role="tabpanel" aria-labelledby="animlink">
-                                ANIMATE
-                            </div>
-
-                            <!-- QUIZ -->
-                            <div class="tab-pane eventbod fade " id="quiztab" role="tabpanel" aria-labelledby="quizlink">
-                                INNOVATE
-                            </div>
-
-                            <!-- GAME -->
-                            <div class="tab-pane eventbod fade" id="gametab" role="tabpanel" aria-labelledby="gamelink">
-                                Game
-                            </div>
-
-                            <!-- SNAP -->
-                            <div class="tab-pane eventbod fade" id="snaptab" role="tabpanel" aria-labelledby="snaplink">
-                                ANIMATE
-                            </div>
-
-                            <!-- CRYPT -->
-                            <div class="tab-pane eventobod fade" id="crypttab" role="tabpanel" aria-labelledby="cryptlink">
-                                CRYPT
-                            </div>
-
-                        </div>
-
-                        <div class="event-box-bottom">
-                            <center>
-                                <div class="tab-pane fade eventheads" id="innovhead" role="tabpanel" aria-labelledby="innovlink">
-                                    <div class="row">
-                                        <center>
-                                            <div class="col-md-4">
-                                                <div class="head-info">
-                                                    <div class="head-text">
-                                                        <h4>Shaivi Shewaramani</h4>
-                                                        <hr class="heads-hr">
-                                                        <p><i class="fas fa-envelope"></i> shaivipyrotech@gmail.com<br><br></p>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="col-md-4">
-                                                <div class="head-info">
-                                                    <div class="head-text">
-                                                        <h4>Aditya Kabu</h4>
-                                                        <hr class="heads-hr">
-                                                        <p><i class="fas fa-envelope"></i> kabuaditya1@gmail.com<br><br></p>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="col-md-4">
-                                                <div class="head-info">
-                                                    <div class="head-text">
-                                                        <h4>Anandiya S. Diwan</h4>
-                                                        <hr class="heads-hr">
-                                                        <p><i class="fas fa-envelope"></i> anandiya.sheel.diwan17@gmail.com<br><br></p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </center>
-                                    </div>
-                                </div>
-                                <div class="tab-pane fade eventheads" id="scripthead" role="tabpanel" aria-labelledby="scriptlink">
-                                    <div class="row">
-                                        <center>
-                                            <div class="col-md-6">
-                                                <div class="head-info">
-                                                    <div class="head-text">
-                                                        <h4>Naman Chandok</h4>
-                                                        <hr class="heads-hr">
-                                                        <p><i class="fas fa-envelope"></i> namanpyrotech@gmail.com<br><br></p>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="col-md-6">
-                                                <div class="head-info">
-                                                    <div class="head-text">
-                                                        <h4>Namya Chhabra</h4>
-                                                        <hr class="heads-hr">
-                                                        <p><i class="fas fa-envelope"></i> Namyachhabra@gmail.com<br><br></p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </center>
-                                    </div>
-                                </div>
-                            </center>
-                        </div>
-                    </div>
-                </center>
-                <br>
-                <hr>
-            </div>
-            <div class="col-md-2"></div>
-        </div>
-
-        <!--HEADS SECTION-->
-
-        <div id="heads" class="section">
+<div id="events-store" class="section">
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
             <center>
-                <div class="row">
-                    <div class="col-md-2"></div>
-                    <div class="col-md-8">
+                <h1>EVENTS IN STORE</h1>
+                <hr class="section-hr">
 
-                        <h1>THE A-TEAM</h1>
-                        <hr class="section-hr">
-
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="head-info">
-                                    <img src="lib/head-img-default.jpg" class="head-img">
-                                    <div class="head-text">
-                                        <h4>Shaivi Shewaramani</h4>
-                                        <h5>President</h5>
-                                        <h6>Keeps the club on <i>Track</i></h6>
-                                        <hr class="heads-hr">
-                                        <p><i class="fas fa-envelope"></i> shaivipyrotech@gmail<br><br></p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6">
-                                <div class="head-info">
-                                    <img src="lib/head-img-default.jpg" class="head-img">
-                                    <div class="head-text">
-                                        <h4>Naman Chandok</h4>
-                                        <h5>Vice-President</h5>
-                                        <h6>He does too much</h6>
-                                        <hr class="heads-hr">
-                                        <p><i class="fas fa-envelope"></i> namanpyrotech@gmail.com<br><br></p>
-                                    </div>
-                                </div>
-                            </div>
-                            <br><br><br>
+                <div class="event-box">
+                    
+                    <div class="event-box-top">
+                        <div class="nav">
+                            <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link innova" id="innovlink" data-toggle="pill" href="#innovtab" role="tab" aria-controls="#innovtab" aria-selected="true" data-menuanchor="home">
+                                        <i class="fal fa-user-chart"></i>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link scripta" id="scriptlink" data-toggle="pill" href="#scripttab" role="tab" aria-controls="#scripttab" aria-selected="true" data-menuanchor="about">
+                                        <i class="far fa-code"></i>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link anima" id="animlink" data-toggle="pill" href="#animtab" role="tab" aria-controls="#animtab" aria-selected="true" data-menuanchor="circulars">
+                                        <i class="fal fa-sparkles"></i>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link quiza" id="quizlink" data-toggle="pill" href="#quiztab" role="tab" aria-controls="#quiztab" aria-selected="true" data-menuanchor="home">
+                                        <i class="fas fa-question"></i>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link gamea" id="gamelink" data-toggle="pill" href="#gametab" role="tab" aria-controls="#gametab" aria-selected="true" data-menuanchor="home">
+                                        <i class="fal fa-alien-monster"></i>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link snapa" id="snaplink" data-toggle="pill" href="#snaptab" role="tab" aria-controls="#snaptab" aria-selected="true" data-menuanchor="home">
+                                        <i class="fal fa-camera-retro"></i>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link crypta" id="cryptlink" data-toggle="pill" href="#crypttab" role="tab" aria-controls="#crypttab" aria-selected="true" data-menuanchor="home">
+                                        <i class="fal fa-globe"></i>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
-
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="head-info">
-                                    <img src="lib/head-img-default.jpg" class="head-img">
-                                    <div class="head-text">
-                                        <h4>Namya Chhabra</h4>
-                                        <h5>Head of Web Dev</h5>
-                                        <h6>Still has the double 'H'</h6>
-                                        <hr class="heads-hr">
-                                        <p><i class="fas fa-envelope"></i> namyachhabra@gmail<br><br></p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="head-info">
-                                    <img src="lib/head-img-default.jpg" class="head-img">
-                                    <div class="head-text">
-                                        <h4>Amogh Jain</h4>
-                                        <h5>Head of Game Dev</h5>
-                                        <h5>Brings <i>Unity</i> to the Club</h5>
-                                        <hr class="heads-hr">
-                                        <p><i class="fas fa-envelope"></i> amogh.pyrotech@gmail.com<br><br></p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="head-info">
-                                    <img src="lib/head-img-default.jpg" class="head-img">
-                                    <div class="head-text">
-                                        <h4>Aditya Kabu</h4>
-                                        <h5>Head of Programming</h5>
-                                        <h5>Tough to <i>function</i> without him</h5>
-                                        <hr class="heads-hr">
-                                        <p><i class="fas fa-envelope"></i> kabuaditya1@gmail.com<br><br></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="head-info">
-                                    <img src="lib/head-img-default.jpg" class="head-img">
-                                    <div class="head-text">
-                                        <h4>Ronit Das</h4>
-                                        <h5>Gamer Boi</h5>
-                                        <h5>The club's <i>Cyberpunk</i></h5>
-                                        <hr class="heads-hr">
-                                        <p><i class="fas fa-envelope"></i> ronitpyrotech@gmail.com<br><br></p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="head-info">
-                                    <img src="lib/head-img-default.jpg" class="head-img">
-                                    <div class="head-text">
-                                        <h4>Sharan Suri</h4>
-                                        <h5>Head of Robotics</h5>
-                                        <h5><i>Gears</i> the club up</h5>
-                                        <hr class="heads-hr">
-                                        <p><i class="fas fa-envelope"></i> sharansuri1980@gmail.com<br><br></p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="head-info">
-                                    <img src="lib/head-img-default.jpg" class="head-img">
-                                    <div class="head-text">
-                                        <h4>Ansh Bajaj</h4>
-                                        <h5>Head of Quizzing</h5>
-                                        <h5 title="Derek o' Brian/Brain">The <i>Brian</i> of the club</h5>
-                                        <hr class="heads-hr">
-                                        <p><i class="fas fa-envelope"></i> anshbajaj07@gmail.com<br><br></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="head-info">
-                                    <img src="lib/head-img-default.jpg" class="head-img">
-                                    <div class="head-text">
-                                        <h4>Anandiya Sheel Diwan</h4>
-                                        <h5>Head of Digital Imaging</h5>
-                                        <h5>Gives some <i>perspective</i> to the club</h5>
-                                        <hr class="heads-hr">
-                                        <p><i class="fas fa-envelope"></i> anandiya.sheel.diwan17@gmail.com<br><br></p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="head-info">
-                                    <img src="lib/head-img-default.jpg" class="head-img">
-                                    <div class="head-text">
-                                        <h4>Saanya Anand</h4>
-                                        <h5>Head of ?</h5>
-                                        <h5>Exists?</h5>
-                                        <hr class="heads-hr">
-                                        <p><i class="fas fa-envelope"></i> reachsaanya@gmail.com<br><br></p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="head-info">
-                                    <img src="lib/head-img-default.jpg" class="head-img">
-                                    <div class="head-text">
-                                        <h4>Ansh Matta</h4>
-                                        <h5>Head of Photography</h5>
-                                        <h5>The guy with the camera</h5>
-                                        <hr class="heads-hr">
-                                        <p><i class="fas fa-envelope"></i> anshmatta@gmail.com<br><br></p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-2"></div>
-                            <div class="col-md-4">
-                                <div class="head-info">
-                                    <img src="lib/head-img-default.jpg" class="head-img">
-                                    <div class="head-text">
-                                        <h4>Manya Kamath</h4>
-                                        <h5>Head of Photography</h5>
-                                        <h5>The girl with the camera</h5>
-                                        <hr class="heads-hr">
-                                        <p><i class="fas fa-envelope"></i> manyakamath26@gmail.com<br><br></p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="head-info">
-                                    <img src="lib/head-img-default.jpg" class="head-img">
-                                    <div class="head-text">
-                                        <h4>Suhana Mehta</h4>
-                                        <h5>Head of Photography</h5>
-                                        <h5>The girl with the tripod</h5>
-                                        <hr class="heads-hr">
-                                        <p><i class="fas fa-envelope"></i> suhana403@gmail.com<br><br></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <hr>
                     </div>
-                    <div class="col-md-2"></div>
+                    
+                    <div class="event-box-body tab-content">
+                        <!-- INNOVATE -->
+                        <div class="tab-pane eventbod fade show active" id="innovtab" role="tabpanel" aria-labelledby="innovlink">
+                            <h1>INNOVATE@TRIX</h1>
+                            <center>
+                                <i>Vulnerability is the birthplace of innovation creation and change.</i>
+                            </center>
+
+                            <ol class="guidelines">
+                                <li>The event is open for <b>classes IX-XII</b>.</li>
+                                <li>Only <b>1 team consisting of 3 students</b> can participate from each school, with <b>one CEO, CFO and CTO each</b>.</li>
+                                <li>The startup can adhere issues to any of the following topics.</li>
+                                <li>Each start-up must fall under the scope of one of the categories listed below. If a start-up fails to do so, the project will receive a less accurate evaluation and may even be penalised.:
+                                    <ol type="i" class="small-list">
+                                        <li>Social Start-Ups</li>
+                                        <li>FMCG Start-Ups</li>
+                                        <li>Financial Start-Ups</li>
+                                        <li>Tech Start-Ups</li>
+                                        <li>Surprise Us</li>
+                                    </ol>
+                                </li>
+                                <li>Referencing online materials – for understanding the topic, providing proof for a statement or any other purpose – is allowed; however, <b>plagiarism will not be tolerated</b>; if found, then the participant would be disqualified and their institution will receive a letter from our team describing their malpractice and low sense of academic integrity.</li>
+                                <h3>Qualification Round</h3>
+                                <li>The qualification round will begin from <b>19th July</b> and will end on <b>20th July</b>.</li>
+                                <li>The list of qualifiers would be uploaded on the event website on <b>21st July at 12pm</b>.</li>
+                                <li>Participants have to create a powerpoint presentation explaining their startup idea.</li>
+                                <li>The powerpoint must have at <b>max 10 slides</b> covering the following points:
+                                    <ol type="i" class="small-list">
+                                        <li>Executive Summary</li>
+                                        <li>Target Market</li>
+                                        <li>Competitors</li>
+                                        <li>Operations</li>
+                                    </ol>
+                                </li>
+                                <h3>Final Round</h3>
+                                <li>The participants must create an infomercial of their product along with a company name and logo. <b>Use of templates is not allowed</b>. Any qualifying team found using so shall be disqualified.</li>
+                                <li>Participants will have to pitch their startup company to the investors on a scheduled zoom call. You will have <b>10 minutes</b> to present your complete idea including the infomercial, financial projections and marketing plan.</li>
+                                <li>This will be followed by a round of cross questioning on several aspects. The participants should try their best to convince the judges to invest in their company for a reasonable evaluation.</li>
+                            </ol>
+                        </div>
+
+                        <!-- SCRIPT -->
+                        <div class="tab-pane eventbod fade" id="scripttab" role="tabpanel" aria-labelledby="scriptlink">
+                            <h1>SCRIPT@TRIX</h1>
+                            <center>
+                                <i>Talk is cheap. Show me the code.</i>
+                            </center>
+
+                            <ol class="guidelines">
+                                <li>The event is open for students of classes <b>VI-XII</b>.</li>
+                                <li>Only <b>1 team</b> comprising of <b>2 students</b> can participate from each school.</li>
+                                <li>A <b>preliminary round</b> will be conducted and max. of <b>10 teams</b> will qualify for the onsite event on the basis of coding, creativity and design.</li>
+                                <li>Topic for the prelim will be uploaded on <b>8th July 2020</b>. Participants have to submit their prelim entries by <b>15th July 2020.</b></li>
+                                <li>Results of the prelims will be declared by <b>20th July 2020</b>.</li>
+                                <li>For the final round, to be held on 22nd July 2020, topic will be given <b>on the spot</b>.</li>
+                                <li><b>2 PCs</b> will be provided per team in the final round.</li>
+                                <li>Time provided for the onsite event : <b>3 hours</b></li>
+                                <li>Softwares provided will be Adobe Photoshop CS3, Sublime Text, Notepad++, Mozilla Firefox and Google Chrome</li>
+                            </ol>
+                        </div>
+
+                        <!-- ANIMATE -->
+                        <div class="tab-pane eventbod fade" id="animtab" role="tabpanel" aria-labelledby="animlink">
+                            <h1>ANIM@TRIX</h1>
+                            
+                        </div>
+
+                        <!-- QUIZ -->
+                        <div class="tab-pane eventbod fade " id="quiztab" role="tabpanel" aria-labelledby="quizlink">
+                            <h1>QUIZ@TRIX</h1>
+                            
+                        </div>
+
+                        <!-- GAME -->
+                        <div class="tab-pane eventbod fade" id="gametab" role="tabpanel" aria-labelledby="gamelink">
+                            <h1>GAME@TRIX</h1>
+                            
+                        </div>
+
+                        <!-- SNAP -->
+                        <div class="tab-pane eventbod fade" id="snaptab" role="tabpanel" aria-labelledby="snaplink">
+                            <h1>SNAP@TRIX</h1>
+                            
+                        </div>
+
+                        <!-- CRYPT -->
+                        <div class="tab-pane eventobod fade" id="crypttab" role="tabpanel" aria-labelledby="cryptlink">
+                            <h1>CRYPT@TRIX</h1>
+                            
+                        </div>
+                    </div>
+
+                    <div class="event-box-bottom">
+                        <center>
+                            <div class="tab-pane fade eventheads" id="innovhead" role="tabpanel" aria-labelledby="innovlink">
+                                <div class="row">
+                                    <center>
+                                        <div class="col-md-4">
+                                            <div class="head-info">
+                                                <div class="head-text">
+                                                    <h4>Shaivi Shewaramani</h4>
+                                                    <hr class="heads-hr">
+                                                    <p><i class="fas fa-envelope"></i> shaivipyrotech@gmail.com<br><br></p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-4">
+                                            <div class="head-info">
+                                                <div class="head-text">
+                                                    <h4>Aditya Kabu</h4>
+                                                    <hr class="heads-hr">
+                                                    <p><i class="fas fa-envelope"></i> kabuaditya1@gmail.com<br><br></p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-4">
+                                            <div class="head-info">
+                                                <div class="head-text">
+                                                    <h4>Anandiya S. Diwan</h4>
+                                                    <hr class="heads-hr">
+                                                    <p><i class="fas fa-envelope"></i> anandiya.sheel.diwan17@gmail.com<br><br></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </center>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade eventheads" id="scripthead" role="tabpanel" aria-labelledby="scriptlink">
+                                <div class="row">
+                                    <center>
+                                        <div class="col-md-6">
+                                            <div class="head-info">
+                                                <div class="head-text">
+                                                    <h4>Naman Chandok</h4>
+                                                    <hr class="heads-hr">
+                                                    <p><i class="fas fa-envelope"></i> namanpyrotech@gmail.com<br><br></p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <div class="head-info">
+                                                <div class="head-text">
+                                                    <h4>Namya Chhabra</h4>
+                                                    <hr class="heads-hr">
+                                                    <p><i class="fas fa-envelope"></i> Namyachhabra@gmail.com<br><br></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </center>
+                                </div>
+                            </div>
+
+                        </center>
+                    </div>
+                    
                 </div>
             </center>
+            <br>
+            <hr>
         </div>
+        <div class="col-md-2"></div>
     </div>
+
+    <!--HEADS SECTION-->
+
+    <div id="heads" class="section">
+        <center>
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+
+                    <h1>THE A-TEAM</h1>
+                    <hr class="section-hr">
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="head-info">
+                                <img src="lib/head-img-default.jpg" class="head-img">
+                                <div class="head-text">
+                                    <h4>Shaivi Shewaramani</h4>
+                                    <h5>President</h5>
+                                    <h6>Keeps the club on <i>Track</i></h6>
+                                    <hr class="heads-hr">
+                                    <p><i class="fas fa-envelope"></i> shaivipyrotech@gmail<br><br></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="head-info">
+                                <img src="lib/head-img-default.jpg" class="head-img">
+                                <div class="head-text">
+                                    <h4>Naman Chandok</h4>
+                                    <h5>Vice-President</h5>
+                                    <h6>He does too much</h6>
+                                    <hr class="heads-hr">
+                                    <p><i class="fas fa-envelope"></i> namanpyrotech@gmail.com<br><br></p>
+                                </div>
+                            </div>
+                        </div>
+                        <br><br><br>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="head-info">
+                                <img src="lib/head-img-default.jpg" class="head-img">
+                                <div class="head-text">
+                                    <h4>Namya Chhabra</h4>
+                                    <h5>Head of Web Dev</h5>
+                                    <h6>Still has the double 'H'</h6>
+                                    <hr class="heads-hr">
+                                    <p><i class="fas fa-envelope"></i> namyachhabra@gmail<br><br></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="head-info">
+                                <img src="lib/head-img-default.jpg" class="head-img">
+                                <div class="head-text">
+                                    <h4>Amogh Jain</h4>
+                                    <h5>Head of Game Dev</h5>
+                                    <h5>Brings <i>Unity</i> to the Club</h5>
+                                    <hr class="heads-hr">
+                                    <p><i class="fas fa-envelope"></i> amogh.pyrotech@gmail.com<br><br></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="head-info">
+                                <img src="lib/head-img-default.jpg" class="head-img">
+                                <div class="head-text">
+                                    <h4>Aditya Kabu</h4>
+                                    <h5>Head of Programming</h5>
+                                    <h5>Tough to <i>function</i> without him</h5>
+                                    <hr class="heads-hr">
+                                    <p><i class="fas fa-envelope"></i> kabuaditya1@gmail.com<br><br></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="head-info">
+                                <img src="lib/head-img-default.jpg" class="head-img">
+                                <div class="head-text">
+                                    <h4>Ronit Das</h4>
+                                    <h5>Gamer Boi</h5>
+                                    <h5>The club's <i>Cyberpunk</i></h5>
+                                    <hr class="heads-hr">
+                                    <p><i class="fas fa-envelope"></i> ronitpyrotech@gmail.com<br><br></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="head-info">
+                                <img src="lib/head-img-default.jpg" class="head-img">
+                                <div class="head-text">
+                                    <h4>Sharan Suri</h4>
+                                    <h5>Head of Robotics</h5>
+                                    <h5><i>Gears</i> the club up</h5>
+                                    <hr class="heads-hr">
+                                    <p><i class="fas fa-envelope"></i> sharansuri1980@gmail.com<br><br></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="head-info">
+                                <img src="lib/head-img-default.jpg" class="head-img">
+                                <div class="head-text">
+                                    <h4>Ansh Bajaj</h4>
+                                    <h5>Head of Quizzing</h5>
+                                    <h5 title="Derek o' Brian/Brain">The <i>Brian</i> of the club</h5>
+                                    <hr class="heads-hr">
+                                    <p><i class="fas fa-envelope"></i> anshbajaj07@gmail.com<br><br></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="head-info">
+                                <img src="lib/head-img-default.jpg" class="head-img">
+                                <div class="head-text">
+                                    <h4>Anandiya Sheel Diwan</h4>
+                                    <h5>Head of Digital Imaging</h5>
+                                    <h5>Gives some <i>perspective</i> to the club</h5>
+                                    <hr class="heads-hr">
+                                    <p><i class="fas fa-envelope"></i> anandiya.sheel.diwan17@gmail.com<br><br></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="head-info">
+                                <img src="lib/head-img-default.jpg" class="head-img">
+                                <div class="head-text">
+                                    <h4>Saanya Anand</h4>
+                                    <h5>Head of ?</h5>
+                                    <h5>Exists?</h5>
+                                    <hr class="heads-hr">
+                                    <p><i class="fas fa-envelope"></i> reachsaanya@gmail.com<br><br></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="head-info">
+                                <img src="lib/head-img-default.jpg" class="head-img">
+                                <div class="head-text">
+                                    <h4>Ansh Matta</h4>
+                                    <h5>Head of Photography</h5>
+                                    <h5>The guy with the camera</h5>
+                                    <hr class="heads-hr">
+                                    <p><i class="fas fa-envelope"></i> anshmatta@gmail.com<br><br></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2"></div>
+                        <div class="col-md-4">
+                            <div class="head-info">
+                                <img src="lib/head-img-default.jpg" class="head-img">
+                                <div class="head-text">
+                                    <h4>Manya Kamath</h4>
+                                    <h5>Head of Photography</h5>
+                                    <h5>The girl with the camera</h5>
+                                    <hr class="heads-hr">
+                                    <p><i class="fas fa-envelope"></i> manyakamath26@gmail.com<br><br></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="head-info">
+                                <img src="lib/head-img-default.jpg" class="head-img">
+                                <div class="head-text">
+                                    <h4>Suhana Mehta</h4>
+                                    <h5>Head of Photography</h5>
+                                    <h5>The girl with the tripod</h5>
+                                    <hr class="heads-hr">
+                                    <p><i class="fas fa-envelope"></i> suhana403@gmail.com<br><br></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+        </center>
+    </div>
+</div>
+    
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

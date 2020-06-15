@@ -11,8 +11,8 @@
     --heading-color: rgba(0, 0, 0, 0.1);
     --loader-bg-color: #ffffff;
     --overlay-color: rgba(255, 255, 255, 0.2);
-    --scroll-bg-color: #ddd;
-    --scroll-fg-color: #aaa;
+    --scroll-bg-color: #aaa;
+    --scroll-fg-color: #ddd;
     --moon: block;
     --sun: none;
     --invert: invert(100%);
@@ -522,16 +522,16 @@ hr {
 
 .event-box {
     border-radius: 20px;
-    background-color: var(--secondary-color);
+    background-color: var(--scroll-fg-color);
     font-style: normal;
     font-weight: 700;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
 }
 
 .event-box-top {
-    background-color: var(--bg-color);
+    background-color: var(--scroll-bg-color);
     border: 2px transparent solid;
-    border-bottom-color: var(--primary-color);
+    border-bottom-color: var(--secondary-color);
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     padding: 10px 30px;
@@ -550,12 +550,6 @@ hr {
     display: block !important;
 }
 
-.eventbox-heading {
-    text-align: center;
-    text-decoration: underline;
-    color: #1f1f1f;
-}
-
 .event-box-body {
     padding: 50px;
     height: 70vh;
@@ -568,7 +562,7 @@ hr {
 }
 
 .event-box-bottom {
-    background-color: var(--bg-color);
+    background-color: var(--scroll-bg-color);
     border: 2px transparent solid;
     border-top-color: var(--primary-color);
     border-bottom-left-radius: 20px;
@@ -584,6 +578,20 @@ hr {
 
 .nav-link i {
     color: var(--font-color);
+    font-size: 40;
+}
+
+.nav-link {
+    transition: 0.4s;
+    margin: 10;
+}
+
+.nav-link:hover {
+    background-color: var(--heading-color) !important;
+}
+
+li.active a {
+    background-color: var(--primary-color-half) !important;
 }
 
 /*HEADS*/
