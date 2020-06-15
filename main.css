@@ -8,7 +8,7 @@
     --nav-bg-color: #eee;
     --font-color: #000;
     --bg-color: #fff;
-    --heading-color: rgba(0, 0, 0, 0.1);
+    --heading-color: rgba(0, 0, 0, 0.05);
     --loader-bg-color: #ffffff;
     --overlay-color: rgba(255, 255, 255, 0.2);
     --scroll-bg-color: #aaa;
@@ -16,7 +16,7 @@
     --moon: block;
     --sun: none;
     --invert: invert(100%);
-    --home-img: url(lib/logo-foot.png);
+    --home-img: url(lib/logo-foot.svg);
 }
 
 [data-theme="dark"] {
@@ -27,7 +27,7 @@
     --nav-bg-color: #171717;
     --font-color: #bbb;
     --bg-color: #151515;
-    --heading-color: rgba(255, 255, 255, 0.1);
+    --heading-color: rgba(255, 255, 255, 0.05);
     --loader-bg-color: #151515;
     --overlay-color: rgba(0, 0, 0, 0.52);
     --scroll-bg-color: #0f0f0f;
@@ -35,7 +35,7 @@
     --moon: none;
     --sun: block;
     --invert: invert(0%);
-    --home-img: url(lib/logo-foot-white.png);
+    --home-img: url(lib/logo-foot-white.svg);
 }
 
 /* PREREQUISITES */
@@ -75,6 +75,16 @@ body {
 
 hr {
     border-color: var(--heading-color);
+}
+
+a {
+    color: var(--secondary-color);
+    transition: 0.4s;
+}
+
+a:hover {
+    color: var(--primary-color);
+    text-decoration: none;
 }
 
 /* LOADER */
@@ -198,7 +208,7 @@ hr {
 
 .navbar {
     overflow: hidden;
-    background-color: none;
+    background-color: var(--nav-bg-color);
     position: fixed;
     width: 100%;
     border-radius: 0;
@@ -208,10 +218,6 @@ hr {
     top: 0;
     transition: all 0.25s;
     color: var(--primary-color);
-}
-
-.disappear {
-    top: -200;
 }
 
 .navbar a {
@@ -382,6 +388,10 @@ hr {
     display: none;
 }
 
+.disappear {
+    top: -200;
+}
+
 /* HOME */
 
 #home {
@@ -424,7 +434,6 @@ hr {
 /* SECTIONS */
 
 .section {
-    padding: 0 0 5% 0;
     z-index: 1;
     background-color: var(--bg-color);
     color: var(--font-color);
@@ -506,16 +515,6 @@ hr {
     border-color: #aaa;
     margin-top: 10px;
     margin-bottom: 10px;
-}
-
-.event-link {
-    color: var(--secondary-color);
-    transition: 0.4s;
-}
-
-.event-link:hover {
-    color: var(--primary-color);
-    text-decoration: none;
 }
 
 /* EVENT BOX */
@@ -607,7 +606,7 @@ li.active a {
     padding: 5% 10%;
     text-align: center;
     z-index: 1;
-    background-color: var(--scroll-bg-color);
+    background-color: var(--nav-bg-color);
 }
 
 .footer img {
