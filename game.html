@@ -1,0 +1,154 @@
+<html>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+    
+<head>
+
+<title>Game@trix | Ordin@trix 20</title>  
+
+<link href='https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,400italic,500,100italic,700' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css?family=Dosis|Open+Sans" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link href='main.css' rel='stylesheet' type='text/css'>
+<link rel="icon" href="lib/favicon.png" sizes="26x26" type="image/png">
+
+
+</head>
+<body onload="myFunction()">
+        
+    <!---  NAVBAR   --->
+        
+<div class="navbar disappear">
+    <div class="nav-big">
+        <a href="index.html" class="nav-img"><img src="lib/logo.png"></a>
+        <a href="#about">Register</a>
+    </div>
+    <div class="nav-small">
+        <span onclick="openNav()" class="bruh">
+            <i class="fas fa-bars"></i>
+        </span>
+    </div>
+</div> 
+    
+<div id="sidenav" class="sidenav">
+    <center>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html"><i class="fas fa-home"></i></a>
+        <a href="#about">Register</a>
+    </center>
+</div>    
+
+<a class="sr-only sr-only-focusable" href="#sidenav">Skip to navigation bar</a>
+<a class="sr-only sr-only-focusable" href="#home">Skip to main content</a>
+<a class="sr-only sr-only-focusable" href="#end">Skip to footer</a>      
+
+    <!--- DARK MODE SWITCH --->
+    
+<div class="theme-switch-wrapper">
+    <label class="theme-switch" for="checkbox">
+        <input type="checkbox" id="checkbox" />
+        <div class="slider round">
+            <center>
+                <img src="lib/sun.png" class="sun">
+                <img src="lib/moon.png" class="moon"> 
+            </center>
+        </div>
+    </label>
+</div>  
+    
+    <!--- HOME --->
+
+<div class="event-page game">
+    <div class="row">
+        <div class="col-md-2 left">
+            <a href="scratch.html">
+                <h3><i class="fas fa-chevron-left"></i></h3>
+            </a>
+        </div>
+        <div class="col-md-8">
+            <center>
+                <h1>GAME@TRIX</h1>
+            </center>
+        </div>
+        <div class="col-md-2 right">
+            <a href="snap.html">
+                <h3><i class="fas fa-chevron-right"></i></h3>
+            </a>
+        </div>
+    </div>
+</div>    
+    
+    <!--- ABOUT --->
+
+<div id="about" class="section">
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <center>
+                <i>Eat. Sleep. Game. Repeat</i>
+            </center>
+
+            <ol class="guidelines">
+                <li>The event is open for classes IX-XII.</li>
+                <li>Only <b>1 team comprising of 3 students</b> can participate from each school.</li> 
+                <li>This event will be held in two phases - an online prelims round followed by the final round on the day of Ordin@trix 2020.</li>
+                <li>Only <b>16</b> teams will qualify for the final round.</li>
+                <li>The prelims will be held in July 2020.</li>
+                <li>The games will be played on the following platforms - PC AND CONSOLE .</li>
+                <li>Students are allowed to bring their own devices such as <b>controllers, keyboards and mouse</b>. Thumb grips are allowed, pro controllers/scuff controllers are <b>not allowed</b>.</li>
+                <li><b>Specific Team requirements-</b> Out of 3, 1 team member must be a console player and 1 must be a PC player, 3rd member can of either platform.</li>
+                <li>The event includes <b>team rounds</b>- they may include games that are cross platform and games specific to a platform as well. So choose team members accordingly.</li>
+                <li>Details of a discord server will be shared upon registrations. It would include details about the prelims and final event.</li>
+            </ol>
+
+            <div class="row">
+                <center>
+                    <div class="col-md-6">
+                        <div class="head-info">
+                            <div class="head-text">
+                                <h4>Amogh Jain</h4>
+                                <hr class="heads-hr">
+                                <p><i class="fas fa-envelope"></i> amogh.pyrotech@gmail.com<br><br></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">    
+                        <div class="head-info">
+                            <div class="head-text">
+                                <h4>Ronit Das</h4>
+                                <hr class="heads-hr">
+                                <p><i class="fas fa-envelope"></i> ronitpyrotech@gmail.com<br><br></p>
+                            </div>
+                        </div>
+                    </div>
+                </center>
+            </div>   
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+</div>
+    
+<div class="footer">
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+            <a href="index.html" class="img"><img src="lib/logo-foot-white.png" placeholder="Ordin@trix 20.0"></a>
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+    <div class="fdiv">
+        &copy; All Rights Reserved. Pyrotech 2020<br>
+        Website developed by the Pyrotech team<br>
+        Tagore International School<br>
+        Vasant Vihar
+    </div>
+</div>
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="index.js"></script>    
+</body>
+</html>

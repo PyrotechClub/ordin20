@@ -1,0 +1,152 @@
+<html>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+    
+<head>
+
+<title>Code@trix | Ordin@trix 20</title>  
+
+<link href='https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,400italic,500,100italic,700' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css?family=Dosis|Open+Sans" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link href='main.css' rel='stylesheet' type='text/css'>
+<link rel="icon" href="lib/favicon.png" sizes="26x26" type="image/png">
+
+</head>
+<body onload="myFunction()">
+        
+    <!---  NAVBAR   --->
+        
+<div class="navbar disappear">
+    <div class="nav-big">
+        <a href="index.html" class="nav-img"><img src="lib/logo.png"></a>
+        <a href="#about">Register</a>
+    </div>
+    <div class="nav-small">
+        <span onclick="openNav()" class="bruh">
+            <i class="fas fa-bars"></i>
+        </span>
+    </div>
+</div> 
+    
+<div id="sidenav" class="sidenav">
+    <center>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html"><i class="fas fa-home"></i></a>
+        <a href="#about">Register</a>
+    </center>
+</div>    
+
+<a class="sr-only sr-only-focusable" href="#sidenav">Skip to navigation bar</a>
+<a class="sr-only sr-only-focusable" href="#home">Skip to main content</a>
+<a class="sr-only sr-only-focusable" href="#end">Skip to footer</a>      
+
+    <!--- DARK MODE SWITCH --->
+    
+<div class="theme-switch-wrapper">
+    <label class="theme-switch" for="checkbox">
+        <input type="checkbox" id="checkbox" />
+        <div class="slider round">
+            <center>
+                <img src="lib/sun.png" class="sun">
+                <img src="lib/moon.png" class="moon"> 
+            </center>
+        </div>
+    </label>
+</div>  
+    
+    <!--- HOME --->
+
+<div class="event-page code">
+    <div class="row">
+        <div class="col-md-2 left">
+            <a href="quiz.html">
+                <h3><i class="fas fa-chevron-left"></i></h3>
+            </a>
+        </div>
+        <div class="col-md-8">
+            <center>
+                <h1>CODE@TRIX</h1>
+            </center>
+        </div>
+        <div class="col-md-2 right">
+            <a href="scratch.html">
+                <h3><i class="fas fa-chevron-right"></i></h3>
+            </a>
+        </div>
+    </div>
+</div> 
+    
+    <!--- ABOUT --->
+
+<div id="about" class="section">
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <center>
+                <i>Talk is cheap. Show me the code.</i>
+            </center>   
+
+            <ol class="guidelines">
+                <li>The event is open for students of classes <b>VI-XII</b>.</li>
+                <li>Only <b>1 team</b> comprising of <b>2 students</b> can participate from each school.</li>
+                <li>A <b>preliminary round</b> will be conducted and max. of <b>10 teams</b> will qualify for the onsite event on the basis of coding, creativity and design.</li>
+                <li>Topic for the prelim will be uploaded on <b>8th July 2020</b>. Participants have to submit their prelim entries by <b>15th July 2020.</b></li>
+                <li>Results of the prelims will be declared by <b>20th July 2020</b>.</li>
+                <li>For the final round, to be held on 22nd July 2020, topic will be given <b>on the spot</b>.</li>
+                <li><b>2 PCs</b> will be provided per team in the final round.</li>
+                <li>Time provided for the onsite event : <b>3 hours</b></li>
+                <li>Softwares provided will be Adobe Photoshop CS3, Sublime Text, Notepad++, Mozilla Firefox and Google Chrome</li>
+            </ol>
+
+            <div class="row">
+                <center>
+                    <div class="col-md-6">
+                        <div class="head-info">
+                            <div class="head-text">
+                                <h4>Naman Chandok</h4>
+                                <hr class="heads-hr">
+                                <p><i class="fas fa-envelope"></i> namanpyrotech@gmail.com<br><br></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">    
+                        <div class="head-info">
+                            <div class="head-text">
+                                <h4>Namya Chhabra</h4>
+                                <hr class="heads-hr">
+                                <p><i class="fas fa-envelope"></i> Namyachhabra@gmail.com<br><br></p>
+                            </div>
+                        </div>
+                    </div>
+                </center>
+            </div>   
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+</div>
+    
+<div class="footer">
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+            <a href="index.html" class="img"><img src="lib/logo-foot-white.png" placeholder="Ordin@trix 20.0"></a>
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+    <div class="fdiv">
+        &copy; All Rights Reserved. Pyrotech 2020<br>
+        Website developed by the Pyrotech team<br>
+        Tagore International School<br>
+        Vasant Vihar
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="index.js"></script>   
+</body>
+</html>
