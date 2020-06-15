@@ -111,7 +111,6 @@ if (currentTheme) {
 
     if (currentTheme === 'dark') {
         toggleSwitch.checked = true;
-        document.getElementById("skill-img").style.filter = "invert(100)";
     }
 }
 
