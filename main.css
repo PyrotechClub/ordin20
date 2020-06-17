@@ -561,11 +561,12 @@ a:hover {
 .eventbod {
     position: absolute;
     text-align: left;
-    width: 90%;
+    width: inherit;
     height: 60vh;
     overflow-x: hidden;
     overflow-y: auto;
     padding: 50;
+    margin: 0 50;
 }
 
 .event-box-bottom {
