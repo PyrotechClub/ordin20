@@ -421,8 +421,9 @@ a:hover {
     position: absolute;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
-    background-image: url(lib/homebg.gif);
+    background-position: top;
+    background-image: url(lib/hackermanislyfe.jpg);
+    /*background-image: url(lib/homebg.jpg);*/
     content: "";
     height: 100%;
     width: 100%;
