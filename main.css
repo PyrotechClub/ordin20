@@ -570,6 +570,12 @@ a:hover {
     margin: 0 50;
 }
 
+@media screen and (max-width: 950px) {
+       .eventbod {
+        margin: 0 !important;
+    }
+}
+
 .event-box-bottom {
     background-color: var(--scroll-bg-color);
     border: 2px transparent solid;
