@@ -428,7 +428,6 @@ a:hover {
     height: 100%;
     width: 100%;
     z-index: -1;
-    filter: var(--invert);
     transition: 0.4s;
 }
 
