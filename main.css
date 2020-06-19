@@ -573,6 +573,7 @@ a:hover {
 @media screen and (max-width: 950px) {
        .eventbod {
         margin: 0 !important;
+        padding: 0 50 !important;
     }
 }
 
