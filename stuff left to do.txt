@@ -3,13 +3,17 @@
 
 
 
-scroll bar ne hagg diya
-event dabba details
+scroll bar ne hagg diya				
+event dabba details					---DONE
 event daba styling
 heads ki pics
 Linking the fb page
-Teaser daalna
+Teaser daalna						
 Invite link karna nav mei
 smooth scroll theek karna
 nav theek karna
 about section 
+
+
+
+
