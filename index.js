@@ -11,6 +11,7 @@ function showPage() {
     document.getElementById("mainBod").style.display = "block";
 }
 
+/*
     // TRANSPARENT NAVBAR
 
 jQuery(document).on("scroll", function () {
@@ -23,8 +24,8 @@ jQuery(document).on("scroll", function () {
     }
 });
 
-/*
     // SMOOTH SCROLL
+
 $("#navh").click(function() {
     $("html, body").animate( 
                 { scrollTop: '0' }, 3000); 

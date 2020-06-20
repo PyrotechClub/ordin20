@@ -1,19 +1,11 @@
 
-
-
-
-
-scroll bar ne hagg diya				---Done
-event dabba details					---DONE
-event daba styling
-heads ki pics
-Linking the fb page
-Teaser daalna						
-Invite link karna nav mei
-smooth scroll theek karna
-nav theek karna						---Done
-about section 						
-
-
-
-
+scroll bar ne hagg diya		---Done
+event dabba details		---Done
+event daba styling		---Done
+heads ki pics			---
+Linking the fb page		---
+Teaser daalna			---Half Done
+Invite link karna nav mei	---
+smooth scroll theek karna	---
+nav theek karna			---Half Done
+about section			---
