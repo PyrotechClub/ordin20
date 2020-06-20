@@ -56,6 +56,7 @@ html {
 
 ::-webkit-scrollbar {
     width: 10px;
+    z-index: 999;
 }
 
 ::-webkit-scrollbar-track {
@@ -75,6 +76,7 @@ body {
     transition: 0.4s;
     scrollbar-width: 10px;
     scrollbar-color: var(--scroll-fg-color) var(--scroll-bg-color);
+    
 }
 
 hr {
@@ -216,7 +218,7 @@ a:hover {
     position: fixed;
     width: 100%;
     border-radius: 0;
-    z-index: 500;
+    z-index: 1;
     padding-left: 5%;
     padding-right: 5%;
     top: 0;
