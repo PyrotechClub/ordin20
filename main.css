@@ -8,7 +8,7 @@
     --nav-bg-color: #1a1a1a;
     --font-color: #ddd;
     --bg-color: #151515;
-    --heading-color: rgba(255, 255, 255, 0.05);
+    --switch-bg-color: rgba(255, 255, 255, 0.05);
     --loader-bg-color: #151515;
     --overlay-color: rgba(0, 0, 0, 0.52);
     --scroll-bg-color: #0f0f0f;
@@ -28,7 +28,7 @@
     --nav-bg-color: #eee;
     --font-color: #000;
     --bg-color: #fff;
-    --heading-color: rgba(0, 0, 0, 0.05);
+    --switch-bg-color: rgba(0, 0, 0, 0.05);
     --loader-bg-color: #ffffff;
     --overlay-color: rgba(255, 255, 255, 0.3);
     --scroll-bg-color: #ddd;
@@ -179,7 +179,7 @@ a:hover {
     font-size: 30;
     text-align: center;
     padding-top: 10;
-    background-color: var(--heading-color);
+    background-color: var(--switch-bg-color);
 }
 
 .sun {
@@ -548,7 +548,7 @@ a:hover {
     opacity: 1;
 }
 
-.writen p span {
+.indent {
     margin-left: 40;
 }
 
@@ -632,7 +632,7 @@ a:hover {
 }
 
 #events .nav-link:hover {
-    background-color: var(--heading-color) !important;
+    background-color: var(--switch-bg-color) !important;
 }
 
 #events li.active .nav-link {
