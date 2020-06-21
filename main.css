@@ -76,11 +76,11 @@ body {
     transition: 0.4s;
     scrollbar-width: 10px;
     scrollbar-color: var(--scroll-fg-color) var(--scroll-bg-color);
-    
 }
 
 hr {
-    border-color: var(--heading-color);
+    border-color: var(--scroll-fg-color);
+    transition: 0.4s;
 }
 
 a {
@@ -214,16 +214,15 @@ a:hover {
 
 .navbar {
     overflow: hidden;
-    background-color: var(--nav-bg-color);
     position: fixed;
     width: 100%;
     border-radius: 0;
-    z-index: 1;
+    z-index: 500;
     padding-left: 5%;
     padding-right: 5%;
-    top: 0;
     transition: all 0.25s;
     color: var(--primary-color);
+    background-color: var(--nav-bg-color);
 }
 
 .navbar a {
@@ -307,7 +306,7 @@ a:hover {
     height: 100%;
     width: 0%;
     position: fixed;
-    z-index: 500;
+    z-index: 9999;
     top: 0;
     left: 0;
     background-color: rgba(20, 20, 20, 0.9);
@@ -409,17 +408,33 @@ a:hover {
     z-index: -1;
     align-content: center;
     justify-content: center;
-    background-image: var(--home-img);
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    background-size: 50%;
     transition: 0.4s;
 }
 
-@media screen and (max-width: 950px) {
-    #home {
-        background-size: 100%;
-    }
+.home-logo {
+    margin: 45vh 20 20 20;
+    filter: var(--invert);
+}
+
+.a-btn {
+    color: var(--font-color);
+    border: solid 1.5px;
+    background: none;
+    border-radius: 30px;
+    padding: 10 30;
+    justify-content: center;
+    align-content: center;
+    transition: 0.5s;
+    text-align: center;
+    border-color: var(--primary-color);
+    font-size: 15 !important;
+    text-transform: none;
+}
+
+.a-btn:hover {
+    background: var(--primary-color);
+    color: #fff !important;
+    text-decoration: none;
 }
 
 #home::before {
@@ -427,8 +442,9 @@ a:hover {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
-    background-image: url(lib/hackermanislyfe.jpg);
-    /*background-image: url(lib/homebg.jpg);*/
+    /*background-image: url(lib/hackermanislyfe.jpg);*/
+    background-image: url(lib/homebg.jpg);
+    background-attachment: fixed;
     content: "";
     height: 100%;
     width: 100%;
@@ -466,10 +482,12 @@ a:hover {
     padding: 20;
     padding-top: 3vh;
     z-index: 1;
+    font-size: 20;
     cursor: pointer;
     transition: 0.4s;
     background: linear-gradient(to right, var(--font-color) 0%, var(--primary-color) 100%);
     -webkit-background-clip: text;
+    transform: scale(0.9);
 }
 
 .section-head h2 {
@@ -477,10 +495,11 @@ a:hover {
     font-weight: 300;
     color: var(--font-color);
     text-align: center;
+    font-size: 40px;
 }
 
 .time-left:hover {
-    transform: scale(1.05);
+    transform: scale(1);
     -webkit-text-fill-color: transparent;
 }
 
@@ -488,7 +507,7 @@ a:hover {
 #mins,
 #hours,
 #secs {
-    font-size: 20px;
+    font-size: 25;
 }
 
 .section-hr {
@@ -507,17 +526,34 @@ a:hover {
 
 .aboutImg img {
     float: center;
-    width: 10vw;
+    width: 15vh;
     filter: var(--invert);
-    height: auto;
+    opacity: 0.8;
+    transition: 0.4s;
 }
 
-.aboutImg a:active {
-    overlay: var(--overlay-color);
+#about .nav-link:hover {
+    background-color: transparent !important;
+}
+
+#about .nav-link:hover img {
+    opacity: 0.9;
+}
+
+#about li.active .nav-link {
+    background-color: transparent !important;
+}
+
+#about li.active .nav-link img {
+    opacity: 1;
 }
 
 .writen p span {
     margin-left: 40;
+}
+
+.aboutTextCont {
+    padding-top: 7%;
 }
 
 /* EVENT BOX */
@@ -538,7 +574,7 @@ a:hover {
     letter-spacing: 2px;
 }
 
-.nav-link {
+#events .nav-link {
     border-top-left-radius: 5px !important;
     border-top-right-radius: 5px !important;
     border-bottom-left-radius: 0 !important;
@@ -574,12 +610,12 @@ a:hover {
 }
 
 @media screen and (max-width: 950px) {
-    .eventbod {
+    #events .eventbod {
         padding: 10 !important;
-        width: 85vw;
+        width: 80vw;
     }
 
-    .nav-link {
+    #events .nav-link {
         border-radius: 5px !important;
     }
 }
@@ -590,17 +626,16 @@ a:hover {
     margin: -10;
 }
 
-.nav-link i {
+#events .nav-link i {
     color: var(--font-color);
     font-size: 40;
 }
 
-
-.nav-link:hover {
+#events .nav-link:hover {
     background-color: var(--heading-color) !important;
 }
 
-li.active .nav-link {
+#events li.active .nav-link {
     background-color: var(--primary-color) !important;
 }
 

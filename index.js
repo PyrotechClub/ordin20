@@ -12,19 +12,18 @@ function showPage() {
 }
 
 /*
-    // TRANSPARENT NAVBAR
 
 jQuery(document).on("scroll", function () {
     if ($(document).scrollTop() > 120) {
         $(".navbar").css("background-color","var(--nav-bg-color)");
-        $(".disappear").css("top","0");
+        $(".navbar").css("top","0");
     } else {
         $(".navbar").css("background","none");
-        $(".disappear").css("top","-200");
+        $(".navbar").css("top","-200");
     }
 });
 
-    // SMOOTH SCROLL
+ /*   // SMOOTH SCROLL
 
 $("#navh").click(function() {
     $("html, body").animate( 

@@ -36,13 +36,13 @@
     <div class="mainBod" id="mainBod">
 
         <!---  NAVBAR   --->
-        
+
         <!-- I HAVE REMOVED DISAPPEAR FROM HERE-->
-        
-        <div class="navbar ">
+
+        <div class="navbar" id="navbar">
             <div class="nav-big">
                 <a href="#home" class="nav-img"><img src="lib/logo.png"></a>
-                <a href="#" class="navb">Register</a>
+                <a href="https://forms.gle/NHpyJusYXzS4gwJi7" target="_blank" class="navb">Register</a>
                 <a href="#heads" class="navt">Team</a>
                 <a href="#events" class="nave">Events</a>
                 <a href="#rules" class="nave">Guidelines</a>
@@ -57,14 +57,14 @@
         </div>
 
         <div id="sidenav" class="sidenav">
-            <center>
+            <center> 
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                 <a href="#home"><i class="fas fa-home"></i></a>
                 <a href="#about">About</a>
                 <a href="#rules">Guidelines</a>
                 <a href="#events">Team</a>
                 <a href="#heads">Team</a>
-                <a href="#">Register</a>
+                <a href="https://forms.gle/NHpyJusYXzS4gwJi7" target="_blank">Register</a>
             </center>
         </div>
 
@@ -89,6 +89,16 @@
         <!--- HOME --->
 
         <div id="home">
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6">
+                    <center>
+                        <img src="lib/logo-foot-white.svg" class="home-logo">
+                        <a href="https://forms.gle/NHpyJusYXzS4gwJi7" target="_blank" class="a-btn">Register</a>
+                    </center>
+                </div>
+                <div class="col-md-3"></div>
+            </div>
         </div>
 
         <!--- ABOUT --->
@@ -134,37 +144,38 @@
                             </div>
                         </div>
                     </center>
-                    <div class="aboutImg">
-                        <center>
-							<div class="nav">
+                    <div class="row">
+                        <div class="aboutImg col-md-2">
+                            <center>
+                                <div class="nav">
                                     <ul class="nav nav-pills" id="pills-tab" role="tablist">
-                                        <li class="nav-item">
+                                        <li class="nav-item active">
                                             <a class="nav-link" id="ordinImage" data-toggle="pill" href="#ordinText" role="tab" aria-controls="#ordinText" aria-selected="false" data-menuanchor="home">
                                                 <img src="lib/ordin2.png" class="imglink" alt="ordinText">
                                             </a>
                                         </li>
-										<li class="nav-item">
-											<a class="nav-link" id="pyroImage" data-toggle="pill" href="#pyroText" role="tab" aria-controls="#pyroText" aria-selected="false" data-menuanchor="home">
-												<img src="lib/pyro-logo.png" class="imglink" alt="pyroText">
-											</a>
-										</li>
-									</ul>
-							</div>
-                        </center>
-                    </div>
-                    <div class="aboutTextCont tab-content">
-					
-						<div class="tab-pane fade writen aboutText active" id="ordinText" role="tabpanel" aria-labelledby="ordinImage">
-                            <span class="description">
-                                <p><span>I</span>t all started 16 years ago. A fusion of creativity, talent and skill is what Ordin@trix is all about. Ordin@trix has evolved through the years moving from an interschool festival at the state level to an international event. Over the years we have had students from China, Muscat, Japan and other countries as regular participants.</p>
-                                <p><span>T</span>he event has witnessed gracious presence of celebrities like Mr. Amol Gupte and Miss Manju Singh apart from experts from various technical fields. The movies showcased here have been screened at the movie festivals by PVR Cinemas and CHINH India Festival.</p>
-                            </span>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="pyroImage" data-toggle="pill" href="#pyroText" role="tab" aria-controls="#pyroText" aria-selected="false" data-menuanchor="home">
+                                                <img src="lib/pyro-logo.png" class="imglink" alt="pyroText">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </center>
                         </div>
-						<div class="tab-pane fade writen aboutText active" id="pyroText" role="tabpanel" aria-labelledby="pyroImage">
-                            <span class="description">
-                                <p><span>S</span>ince it's conception, Ordin@trix has come a long way and so have the PYROTECHS. They are the very nuclei of Ordin@trix, who create fireworks in the field of technology. They breathe life into Ordin@trix.</p>
-                                <p><span>PYROTECH</span>members are an elite team of student computer enthusiasts. They have represented the school in various competitions and won laurels in events such as web designing, software development, image editing, movie making, 3-D modelling, Robotics, photography and others.</p>
-                            </span>
+                        <div class="aboutTextCont tab-content col-md-10">
+                            <div class="tab-pane fade writen aboutText active in" id="ordinText" role="tabpanel" aria-labelledby="ordinImage">
+                                <span class="description">
+                                    <p><span>I</span>t all started 16 years ago. A fusion of creativity, talent and skill is what Ordin@trix is all about. Ordin@trix has evolved through the years moving from an interschool festival at the state level to an international event. Over the years we have had students from China, Muscat, Japan and other countries as regular participants.</p>
+                                    <p><span>T</span>he event has witnessed gracious presence of celebrities like Mr. Amol Gupte and Miss Manju Singh apart from experts from various technical fields. The movies showcased here have been screened at the movie festivals by PVR Cinemas and CHINH India Festival.</p>
+                                </span>
+                            </div>
+                            <div class="tab-pane fade writen aboutText active" id="pyroText" role="tabpanel" aria-labelledby="pyroImage">
+                                <span class="description">
+                                    <p><span>S</span>ince it's conception, Ordin@trix has come a long way and so have the PYROTECHS. They are the very nuclei of Ordin@trix, who create fireworks in the field of technology. They breathe life into Ordin@trix.</p>
+                                    <p><span>P</span>YROTECH members are an elite team of student computer enthusiasts. They have represented the school in various competitions and won laurels in events such as web designing, software development, image editing, movie making, 3-D modelling, Robotics, photography and others.</p>
+                                </span>
+                            </div>
                         </div>
                     </div>
                     <br>
@@ -222,7 +233,7 @@
                             <div class="event-box-top">
                                 <div class="nav">
                                     <ul class="nav nav-pills" id="pills-tab" role="tablist">
-                                        <li class="nav-item">
+                                        <li class="nav-item active">
                                             <a class="nav-link innova" id="innovlink" data-toggle="pill" href="#innovtab" role="tab" aria-controls="#innovtab" aria-selected="true" data-menuanchor="home">
                                                 <i class="event-icon fal fa-user-chart"></i>
                                             </a>
@@ -263,7 +274,7 @@
 
                             <div class="event-box-body tab-content">
                                 <!-- INNOVATE -->
-                                <div class="tab-pane eventbod fade show active" id="innovtab" role="tabpanel" aria-labelledby="innovlink">
+                                <div class="tab-pane eventbod fade show active in" id="innovtab" role="tabpanel" aria-labelledby="innovlink">
                                     <h1>Innovate@trix</h1>
                                     <center>
                                         <i>Vulnerability is the birthplace of innovation creation and change.</i>
@@ -830,7 +841,7 @@
         </div>
 
         <!--FOOTER-->
-        
+
         <div class="footer">
             <div class="row">
                 <div class="col-md-3"></div>
