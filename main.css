@@ -461,6 +461,10 @@ a:hover {
     transition: 0.4s;
 }
 
+.section h1 {
+    text-transform: uppercase;
+}
+
 .section-event {
     color: var(--font-color);
     padding: 50;
