@@ -39,7 +39,7 @@ $("#nava").click(function() {
     // COUNTDOWN
 
 var myfunc = setInterval(function() {
-    var countDownDate = new Date("Jul 22, 2020 00:00:00").getTime();
+    var countDownDate = new Date("Jul 25, 2020 00:00:00").getTime();
     var now = new Date().getTime();
     var timeleft = countDownDate - now;
     var distance = countDownDate - now;

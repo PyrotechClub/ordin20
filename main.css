@@ -5,7 +5,8 @@
     --primary-color-half: rgba(0, 78, 137, 0.5);
     --home-color: #457eff;
     --secondary-color: #3259c2;
-    --nav-bg-color: #1a1a1a;
+    --nav-bg-color: rgb(30, 30, 30);
+    --nav-half-bg-color: rgba(30, 30, 30, 0.6);
     --font-color: #ddd;
     --bg-color: #151515;
     --switch-bg-color: rgba(255, 255, 255, 0.05);
@@ -26,6 +27,7 @@
     --home-color: #23457b;
     --secondary-color: #3259c2;
     --nav-bg-color: #eee;
+    --nav-half-bg-color: rgba(238, 238, 238, 0.6);
     --font-color: #000;
     --bg-color: #fff;
     --switch-bg-color: rgba(0, 0, 0, 0.05);
@@ -93,7 +95,7 @@ a:hover {
     text-decoration: none;
 }
 
-/* LOADER */
+/* LOADER 
 
 .load {
     height: 100%;
@@ -210,19 +212,25 @@ a:hover {
 
 .navbar a:hover {
     color: var(--primary-color);
+    background-color: var(--nav-bg-color);
+}
+
+.navbar:hover {
+    background-color: var(--nav-half-bg-color);
 }
 
 .navbar {
+    background-color: transparent;
     overflow: hidden;
     position: fixed;
     width: 100%;
+    transform: translateX(-10px);
     border-radius: 0;
     z-index: 500;
     padding-left: 5%;
     padding-right: 5%;
     transition: all 0.25s;
     color: var(--primary-color);
-    background-color: var(--nav-bg-color);
 }
 
 .navbar a {
@@ -230,14 +238,12 @@ a:hover {
     display: block;
     color: var(--secondary-color);
     text-align: center;
-    margin-top: 0.5%;
     text-decoration: none;
-    transition: all 0.15s;
-    padding: 10px 15px;
+    transition: all 0.25s;
+    padding: 17px;
     position: relative;
     z-index: 1;
     font-size: 17;
-    margin: 0.5%;
     font-family: 'Raleway', sans-serif;
 }
 
@@ -459,6 +465,7 @@ a:hover {
     background-color: var(--bg-color);
     color: var(--font-color);
     transition: 0.4s;
+    padding: 50 0;
 }
 
 .section h1 {
@@ -532,7 +539,7 @@ a:hover {
     float: center;
     width: 15vh;
     filter: var(--invert);
-    opacity: 0.8;
+    opacity: 0.6;
     transition: 0.4s;
 }
 
@@ -565,7 +572,6 @@ a:hover {
 .event-box {
     background-color: var(--box-bg-color);
     font-style: normal;
-    font-weight: 700;
 }
 
 .event-box-top {
