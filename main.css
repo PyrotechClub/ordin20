@@ -17,7 +17,7 @@
     --moon: none;
     --sun: block;
     --invert: invert(0%);
-    --box-bg-color: #171717;
+    --box-bg-color: rgb(27, 27, 27);
     --home-img: url(lib/logo-foot-white.svg);
 }
 
@@ -224,7 +224,6 @@ a:hover {
     overflow: hidden;
     position: fixed;
     width: 100%;
-    transform: translateX(-10px);
     border-radius: 0;
     z-index: 500;
     padding-left: 5%;
