@@ -95,7 +95,7 @@ a:hover {
     text-decoration: none;
 }
 
-/* LOADER 
+/* LOADER */
 
 .load {
     height: 100%;
@@ -211,7 +211,7 @@ a:hover {
 /* NAVBAR */
 
 .navbar a:hover {
-    color: var(--primary-color);
+    opacity: 1;
     background-color: var(--nav-bg-color);
 }
 
@@ -235,11 +235,12 @@ a:hover {
 .navbar a {
     float: right;
     display: block;
-    color: var(--secondary-color);
+    color: var(--font-color);
     text-align: center;
     text-decoration: none;
     transition: all 0.25s;
     padding: 17px;
+    opacity: 0.6;
     position: relative;
     z-index: 1;
     font-size: 17;
@@ -255,7 +256,7 @@ a:hover {
     width: 0%;
     content: '.';
     color: transparent;
-    background: var(--primary-color);
+    background: var(--font-color);
     height: 2px;
     z-index: -1;
     transition: all 0.25s;
