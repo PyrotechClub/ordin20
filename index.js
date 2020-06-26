@@ -11,16 +11,9 @@ function showPage() {
     document.getElementById("mainBod").style.display = "block";
 }
 
+
+
 /*
-jQuery(document).on("scroll", function () {
-    if ($(document).scrollTop() > 120) {
-        $(".navbar").css("background-color","var(--nav-bg-color)");
-        $(".navbar").css("top","0");
-    } else {
-        $(".navbar").css("background","none");
-        $(".navbar").css("top","-200");
-    }
-});
 
  /*   // SMOOTH SCROLL
 
