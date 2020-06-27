@@ -71,10 +71,6 @@ html {
     transition: 0.4s;
 }
 
-.transparent-bg {
-    background-color: rgab(0, 0, 0, 0.1)
-}
-
 body {
     overflow-x: hidden;
     background-color: var(--bg-color);
