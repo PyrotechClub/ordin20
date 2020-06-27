@@ -95,7 +95,7 @@ a:hover {
     text-decoration: none;
 }
 
-/* LOADER */
+/* LOADER 
 
 .load {
     height: 100%;
@@ -566,6 +566,16 @@ a:hover {
 
 .aboutTextCont {
     padding-top: 7%;
+}
+
+/* UPDATES */
+
+#updates .col-md-4 {
+    padding: 50;
+}
+
+iframe {
+    border: none;
 }
 
 /* EVENT BOX */
