@@ -398,7 +398,7 @@ a:hover {
 .nav-big {
     display: block;
 }
-
+ronit
 .nav-small {
     display: none;
 }
@@ -734,6 +734,17 @@ iframe::-webkit-scrollbar  {
     border: 3px #fff solid;
     animation: 1s pic ease-out;
     -webkit-animation: 1s pic ease-out;
+}
+
+
+@media screen and (max-width: 950px) {
+    .fullimg {
+        display: none !important;
+    }
+
+    .nav-small {
+        display: block !important;
+    }
 }
 
 .head-img {
