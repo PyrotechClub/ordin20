@@ -72,7 +72,7 @@ html {
 }
 
 .transparent-bg {
-    background-color: rgab(0,0,0,0.1)
+    background-color: rgab(0, 0, 0, 0.1)
 }
 
 body {
@@ -587,7 +587,7 @@ iframe {
     -ms-overflow-style: none;
 }
 
-iframe::-webkit-scrollbar  {
+iframe::-webkit-scrollbar {
     display: none;
 }
 
@@ -689,29 +689,33 @@ iframe::-webkit-scrollbar  {
 }
 
 /*HEADS*/
+
 .imgcontainer {
     position: relative;
     width: 30vh;
     height: 30vh;
     border-radius: 100vh;
+    cursor: pointer;
 }
 
 .imgoverlay {
     position: absolute;
-    right: 100%;
+    right: 0;
     bottom: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.3);
     overflow: hidden;
     height: 30vh;
-    width: 0;
+    width: 30vh;
     transition: .5s ease;
-    border-radius: 100%
+    border-radius: 100%;
+    transform: scale(0);
+    -webkit-transform: scale(0);
 }
 
 .imgcontainer:hover .imgoverlay {
-    right: 0;
-    width: 30vh;
+    transform: scale(1);
+    -webkit-transform: scale(1);
 }
 
 .imgtext {
@@ -739,11 +743,8 @@ iframe::-webkit-scrollbar  {
 
 @media screen and (max-width: 950px) {
     .fullimg {
-        display: none !important;
-    }
-
-    .nav-small {
-        display: block !important;
+        height: auto !important;
+        width: 90vw !important;
     }
 }
 
