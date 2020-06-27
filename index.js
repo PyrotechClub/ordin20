@@ -78,8 +78,7 @@ $(function() {
     });
   });
   
-/*
-    // DARK MODE
+// DARK MODE
 
 const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
 
@@ -117,5 +116,3 @@ if (currentTheme) {
         toggleSwitch.checked = true;
     }
 }
-*/
-    
