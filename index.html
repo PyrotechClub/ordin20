@@ -6,14 +6,21 @@
 <head>
 
     <title>Ordin@trix 20.0</title>
-
+    <meta charset="utf-8">
+    <meta name="description" content="Ordinatrix 19.0 is back with a new wave of enthusiasm, make sure your school has registered">
+    <meta name="keywords" content="Ordinatrix, Ordin@trix, Ordinatrix 19.0, Tech, TISVV Ordinatrix">
+    <meta name="author" content="Pyrotech club">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.5/vendors/scrolloverflow.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.5/fullpage.min.css">
     <link href='https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,400italic,500,100italic,700' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/css?family=Dosis|Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href='main.css' rel='stylesheet' type='text/css'>
     <link rel="icon" href="lib/favicon.png" sizes="26x26" type="image/png">
     <script src="fontawesome.js"></script>
-    <script src="events.js"></script>
 </head>
 
 <body onload="myFunction()">
@@ -34,7 +41,6 @@
 
 
     <div class="mainBod" id="mainBod">
-
         <!---  NAVBAR   --->
 
         <!-- I HAVE REMOVED DISAPPEAR FROM HERE-->
@@ -45,8 +51,8 @@
                 <a href="https://forms.gle/NHpyJusYXzS4gwJi7" target="_blank" class="navb">Register</a>
                 <a href="#heads" class="navt">Team</a>
                 <a href="#events" class="nave">Events</a>
-                <a href="#rules" class="nave">Guidelines</a>
-                <a href="#about" class="smoothScroll">About</a>
+                <a href="#rules" class="navg">Guidelines</a>
+                <a href="#about" class="nava">About</a>
                 <a href="#home" id="navh">Home</a>
             </div>
             <div class="nav-small">
@@ -85,10 +91,11 @@
                 </div>
             </label>
         </div>
-
+<!--FULL PAGE STARTS HERE
+<div id="fullpage">-->
         <!--- HOME --->
 
-        <div id="home">
+        <div id="home" >
             <div class="row">
                 <div class="col-md-3"></div>
                 <div class="col-md-6">
@@ -103,7 +110,7 @@
 
         <!--- TIMER --->
 
-        <div id="count" class="section">
+        <div id="count" class="section" data-anchor="bomb">
             <div class="row">
                 <div class="col-md-2"></div>
                 <div class="col-md-8">
@@ -153,13 +160,14 @@
         
         <!--- ABOUT --->
         
-        <div class="section" id="about">
+        <div class="section" id="about" data-anchor="abt">
             <div class="row">
                 <div class="col-md-2"></div>
                 <div class="col-md-8">
                     <center>
                         <h1>About Us</h1>
                         <hr class="section-hr">
+
                     </center>
                     <div class="row">
                         <div class="aboutImg col-md-2">
@@ -204,7 +212,7 @@
 
         <!--- GUIDELINES --->
 
-        <div id="rules" class="section">
+        <div id="rules" class="section" data-anchor="rules">
             <div class="row">
                 <div class="col-md-2"></div>
                 <div class="col-md-8">
@@ -238,17 +246,21 @@
             </div>
         </div>
 
-        <!--- FACEBOOK --->
-
-        <div class="section" id="teaser">
+        <!--- UPDATES --->
+        <div class="section" id="updates" data-anchor="updates">
             <center>
                 <div class="row">
                     <div class="col-md-2"></div>
                     <div class="col-md-8">
-                        <hr class="section-hr">
+                        
                         <center>
-                            
+                            <h1>Updates</h1>
+                            <hr class="section-hr">
+                            <h4>All updates will be posted here and on our facebook page. Please keep checking back</h4>
                         </center>
+                        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FOrdinatrix-102648624844688%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=false&hide_cover=false&show_facepile=true&appId" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+                        <iframe src="updates.html" height="500"></iframe>
+                        
                         <br>
                         <hr>
                     </div>
@@ -259,7 +271,7 @@
 
         <!--- EVENTS -->
 
-        <div id="events" class="section">
+        <div id="events" class="section" data-anchor="eve">
             <div class="row">
                 <div class="col-md-2"></div>
                 <div class="col-md-8">
@@ -748,7 +760,7 @@
 
         <!--- TEASER --->
 
-        <div class="section" id="teaser">
+        <div class="section" id="teaser" data-anchor="teaser">
             <center>
                 <div class="row">
                     <div class="col-md-2"></div>
@@ -768,7 +780,7 @@
 
         <!--- HEADS --->
 
-        <div id="heads" class="section">
+        <div id="heads" class="section" data-anchor="janta">
             <center>
                 <div class="row">
                     <div class="col-md-2"></div>
@@ -976,7 +988,6 @@
                 </div>
             </center>
         </div>
-
         <!--FOOTER-->
 
         <div class="footer">
@@ -994,12 +1005,11 @@
                 Vasant Vihar
             </div>
         </div>
-
     </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.js"></script>
+
     <script src="index.js"></script>
+    <script src="nav.js"></script>
 </body>
 
 </html>

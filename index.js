@@ -11,7 +11,17 @@ function showPage() {
     document.getElementById("mainBod").style.display = "block";
 }
 
-
+/* FULPAGE INIT
+new fullpage('#fullpage', {
+    navigation: true,
+    responsiveWidth: 700,
+    anchors: ['home', 'bomb', 'abt', 'rules', 'updates', 'eve', 'teaser', 'janta'],
+    parallax: true,
+    onLeave: function(origin, destination, direction){
+        console.log("Leaving section" + origin.index);
+    },
+});
+*/
 
 /*
 
@@ -28,6 +38,8 @@ $("#nava").click(function() {
     $("html, body").animate( 
                 { scrollTop: h }, 3000); 
 }); */
+ 
+
  
     // COUNTDOWN
 
@@ -64,6 +76,23 @@ function closeNav() {
     document.getElementById("sidenav").style.width = "0";
 }
 
+// Smooth Scroll
+$(function() {
+    $('a[href*=#]:not([href=#])').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          $('html,body').animate({
+            scrollTop: target.offset().top
+          }, 1000);
+          return false;
+        }
+      }
+    });
+  });
+  
+/*
     // DARK MODE
 
 const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
@@ -102,5 +131,5 @@ if (currentTheme) {
         toggleSwitch.checked = true;
     }
 }
-
+*/
     
