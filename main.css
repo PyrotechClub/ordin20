@@ -71,6 +71,10 @@ html {
     transition: 0.4s;
 }
 
+.transparent-bg {
+    background-color: rgab(0,0,0,0.1)
+}
+
 body {
     overflow-x: hidden;
     background-color: var(--bg-color);
@@ -498,7 +502,7 @@ a:hover {
     transition: 0.4s;
     background: linear-gradient(to right, var(--font-color) 0%, var(--primary-color) 100%);
     -webkit-background-clip: text;
-    background-clip:text;
+    background-clip: text;
     transform: scale(0.9);
 }
 
@@ -570,12 +574,36 @@ a:hover {
 
 /* UPDATES */
 
-#updates .col-md-4 {
+#updates .col-md-5 {
+    padding: 50;
+}
+
+#updates .col-md-7 {
     padding: 50;
 }
 
 iframe {
     border: none;
+    -ms-overflow-style: none;
+}
+
+iframe::-webkit-scrollbar  {
+    display: none;
+}
+
+.card {
+    padding: 15px 25px;
+    border-radius: 15px;
+    margin: 5vw 5vh;
+    justify-content: center;
+    align-content: center;
+    transition: 0.5s;
+    text-align: left;
+    margin: 5px auto;
+    -webkit-animation: changebg 2s linear infinite;
+    animation: changebg 2s linear infinite;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
 }
 
 /* EVENT BOX */
@@ -667,24 +695,27 @@ iframe {
     height: 30vh;
     border-radius: 100vh;
 }
+
 .imgoverlay {
     position: absolute;
     right: 100%;
     bottom: 0;
     left: 0;
-    background-color: rgba(0,0,0,0.3);
+    background-color: rgba(0, 0, 0, 0.3);
     overflow: hidden;
     height: 30vh;
-    width:0;
+    width: 0;
     transition: .5s ease;
     border-radius: 100%
 }
+
 .imgcontainer:hover .imgoverlay {
     right: 0;
     width: 30vh;
 }
+
 .imgtext {
-    white-space: nowrap; 
+    white-space: nowrap;
     margin-top: 20;
     color: #f7f7f7;
     font-size: 1em;
@@ -696,6 +727,7 @@ iframe {
     -ms-transform: translate(-50%, -50%);
     font-family: 'Montserrat Alternates'
 }
+
 .fullimg {
     height: 90%;
     width: auto;
@@ -786,9 +818,88 @@ iframe {
     }
 }
 
-@keyframes pic{from{opacity: 0;border-radius: 100%;}to{opacity: 1;border-radius: 0%}}
-@-webkit-keyframes pic{from{opacity: 0;border-radius: 100%;}to{opacity: 1;border-radius: 0%}}
-@keyframes ease-out{from{opacity:1;} to{opacity:0; margin-top:-100}}
+@keyframes pic {
+    from {
+        opacity: 0;
+        border-radius: 100%;
+    }
+
+    to {
+        opacity: 1;
+        border-radius: 0%
+    }
+}
+
+@-webkit-keyframes pic {
+    from {
+        opacity: 0;
+        border-radius: 100%;
+    }
+
+    to {
+        opacity: 1;
+        border-radius: 0%
+    }
+}
+
+@keyframes ease-out {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        margin-top: -100
+    }
+}
+
+@keyframes changebg {
+
+    0%,
+    100% {
+        background-color: var(--secondary-color);
+    }
+
+    50% {
+        background-color: var(--primary-color);
+    }
+}
+
+@-webkit-keyframes changebg {
+
+    0%,
+    100% {
+        background-color: var(--secondary-color);
+    }
+
+    50% {
+        background-color: var(--primary-color);
+    }
+}
+
+@-moz-keyframes changebg {
+
+    0%,
+    100% {
+        background-color: var(--secondary-color);
+    }
+
+    50% {
+        background-color: var(--primary-color);
+    }
+}
+
+@-o-keyframes changebg {
+
+    0%,
+    100% {
+        background-color: var(--secondary-color);
+    }
+
+    50% {
+        background-color: var(--primary-color);
+    }
+}
 
 
 
@@ -803,4 +914,3 @@ iframe {
    | |\ \   |    \    |     |   |    |
    | |/ /   |     \   |     |   |    |
    |___/    |      \  \_____/   |    | */
-   
