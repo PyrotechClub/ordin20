@@ -653,7 +653,7 @@ a:hover {
 
 .head-img {
     border-radius: 100vh;
-    height: 20vh;
+    height: 30vh;
 }
 
 .heads-hr {
@@ -693,7 +693,7 @@ a:hover {
     }
 }
 
-@-webit-keyframes loading {
+@-webkit-keyframes loading {
 
     0%,
     40%,
