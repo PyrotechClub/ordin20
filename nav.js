@@ -1,6 +1,4 @@
-   
-
-   $(document).ready(function (){
+$(document).ready(function (){
     $("a.nav-img").click(function (){
         $('html, body').animate({
             scrollTop: $("#home").offset().top
