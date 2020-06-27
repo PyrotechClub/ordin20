@@ -460,7 +460,7 @@ a:hover {
 
 /* SECTIONS */
 
-.section {
+.sections {
     z-index: 1;
     background-color: var(--bg-color);
     color: var(--font-color);
@@ -468,7 +468,7 @@ a:hover {
     padding: 50 0;
 }
 
-.section h1 {
+.sections h1 {
     text-transform: uppercase;
 }
 
@@ -528,7 +528,7 @@ a:hover {
     width: 40%;
 }
 
-.section .col-md-8 {
+.sections .col-md-8 {
     padding: 50;
 }
 
