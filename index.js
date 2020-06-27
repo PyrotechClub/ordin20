@@ -11,10 +11,7 @@ function showPage() {
     document.getElementById("mainBod").style.display = "block";
 }
 
-
-
 /*
-
  /*   // SMOOTH SCROLL
 
 $("#navh").click(function() {
