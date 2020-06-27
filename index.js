@@ -11,6 +11,21 @@ function showPage() {
     document.getElementById("mainBod").style.display = "block";
 }
 
+/*
+ /*   // SMOOTH SCROLL
+
+$("#navh").click(function() {
+    $("html, body").animate( 
+                { scrollTop: '0' }, 3000); 
+});
+
+var h = $('#about').scrollTop();
+
+$("#nava").click(function() {
+    $("html, body").animate( 
+                { scrollTop: h }, 3000); 
+}); */
+
  
     // COUNTDOWN
 
