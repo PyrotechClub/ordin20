@@ -587,11 +587,11 @@ iframe::-webkit-scrollbar {
     display: none;
 }
 
-.updates-1 p {
+.updates .written {
     padding: 10px;
 }
 
-.updates-1 p:nth-child(-n+2)::before {
+.updates-1 .written:nth-child(-n+2)::before {
     padding: 5px 10px;
     content: 'New';
     border-radius: 15px;
