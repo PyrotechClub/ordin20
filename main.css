@@ -449,8 +449,9 @@ a:hover {
     background-size: cover;
     background-position: top;
     /*background-image: url(lib/hackermanislyfe.jpg);*/
-    background-image: url(lib/homebg.jpg);
+    background-image: url(lib/homebg.png);
     background-attachment: fixed;
+    opacity: 0.9;
     content: "";
     height: 100%;
     width: 100%;
