@@ -695,6 +695,10 @@ iframe::-webkit-scrollbar {
     background-color: var(--primary-color) !important;
 }
 
+#events li.active .nav-link i {
+    color: #fff !important;
+}
+
 /*HEADS*/
 
 .imgcontainer {
