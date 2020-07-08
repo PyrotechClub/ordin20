@@ -636,6 +636,30 @@ iframe::-webkit-scrollbar {
     color: var(--font-color);
 }
 
+.modal-header .close {
+	transition:0.25 !important;
+}
+
+.page-links {
+        color: rgb(127, 127, 127);
+        font-size: 25px;
+        padding: 5;
+        transition: 0.4s;
+    }
+
+.facebook:hover {
+        color: #4267B2;
+    }
+
+.email:hover {
+        color: #B23121;
+    }
+
+.instagram:hover {
+        color: #E1306C;
+    }
+
+
 #events .nav-link {
     border-top-left-radius: 5px !important;
     border-top-right-radius: 5px !important;
