@@ -587,18 +587,15 @@ iframe::-webkit-scrollbar {
     display: none;
 }
 
-.updates .written {
-    padding: 10px;
-}
-
-.updates-1 .written:nth-child(-n+2)::before {
-    padding: 5px 10px;
-    content: 'New';
+.card {
+    padding: 15px 25px;
     border-radius: 15px;
+    margin: 5vw 5vh;
+    justify-content: center;
     align-content: center;
     transition: 0.5s;
     text-align: left;
-    margin: 5px;
+    margin: 5px auto;
     -webkit-animation: changebg 2s linear infinite;
     animation: changebg 2s linear infinite;
     -webkit-animation-fill-mode: both;
