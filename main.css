@@ -88,6 +88,7 @@ hr {
 a {
     color: var(--secondary-color);
     transition: 0.4s;
+    cursor: pointer;
 }
 
 a:hover {
@@ -449,7 +450,7 @@ a:hover {
     background-size: cover;
     background-position: top;
     /*background-image: url(lib/hackermanislyfe.jpg);*/
-    background-image: url(lib/homebg.jpg);
+    background-image: url(lib/homebg.png);
     background-attachment: fixed;
     content: "";
     height: 100%;
@@ -570,14 +571,6 @@ a:hover {
 
 /* UPDATES */
 
-#updates .col-md-5 {
-    padding: 50;
-}
-
-#updates .col-md-7 {
-    padding: 50;
-}
-
 iframe {
     border: none;
     -ms-overflow-style: none;
@@ -592,8 +585,7 @@ iframe::-webkit-scrollbar {
     align-content: center;
     transition: 0.5s;
     text-align: left;
-    margin: 5px auto;
-    margin: 5vh 5vw;
+    margin: 5px 10px;
     line-height: 26px;
 }
 
@@ -605,27 +597,43 @@ iframe::-webkit-scrollbar {
     animation-fill-mode: both;
     padding: 5px 10px;
     border-radius: 15px;
+    color: #fff;
 }
 
-.card:nth-child(-n+2){
+.card:nth-child(-n+2) {
     list-style: none;
 }
 
 /* EVENT BOX */
 
-.event-box {
+.event-box,
+.modal-body {
     background-color: var(--box-bg-color);
     font-style: normal;
 }
 
-.event-box-top {
+.event-box-top,
+.modal-header {
     background-color: var(--scroll-bg-color);
     border-bottom: 2px var(--primary-color) solid;
     text-align: center;
-    font-family: 'garage-gothic', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 50;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+}
+
+.modal-footer {
+    background-color: var(--scroll-bg-color);
+    border-top: 2px var(--primary-color) solid;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+.modal-content {
+    background-color: transparent;
+}
+
+.close span {
+    color: var(--font-color);
 }
 
 #events .nav-link {
@@ -657,6 +665,10 @@ iframe::-webkit-scrollbar {
     padding: 50;
     margin: 0 50 0 0;
     -ms-overflow-style: none;
+}
+
+.modal-body {
+    padding: 50;
 }
 
 .eventbod::-webkit-scrollbar {
