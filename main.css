@@ -580,6 +580,12 @@ iframe::-webkit-scrollbar {
     display: none;
 }
 
+.updates {
+    height: 400px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
 .card {
     justify-content: center;
     align-content: center;
