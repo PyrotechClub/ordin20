@@ -494,7 +494,7 @@ a:hover {
     padding: 20;
     padding-top: 3vh;
     z-index: 1;
-    font-size: 20;
+    font-size: 30px;
     cursor: pointer;
     transition: 0.4s;
     background: linear-gradient(to right, var(--font-color) 0%, var(--primary-color) 100%);
