@@ -2,10 +2,9 @@
 scroll bar ne hagg diya		---Done
 event dabba details		---Done
 event daba styling		---Done
-heads ki pics			---
+heads ki pics			---Done
 Linking the fb page		---Done
 Teaser daalna			---Done
 Invite link karna nav mei	---Done
-smooth scroll theek karna	---
 nav theek karna			---Done
 about section			---Done
